@@ -30,13 +30,26 @@ body {
 
 .leftbar {
     position: fixed;
-    width: 20%;
+    width: 360px;
     padding: 16px;
     height: 100%;
     background-color: #F5F5F5;
     color: #363636;
     box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
+    transition: all 0.5s;
+}
+
+.leftbar .hide {
+    display: none;
+}
+
+.leftbar .hide {
+    float: right;
+}
+
+.leftbar .hide:hover {
+    cursor: pointer;
 }
 
 .leftbar .icon {
@@ -85,6 +98,7 @@ body {
     left: 57.5%;
     transform: translate(-50%);
     width: 60%;
+    transition: all 0.5s;
 }
 
 .container .firstbox {
@@ -124,4 +138,20 @@ body {
     margin: 0 12px;
     color: #777;
     height: auto;
+}
+
+@media only screen and (max-width: 1400px) {
+    .leftbar {
+        width: 54px;
+    }
+    .leftbar .content {
+        display: none;
+    }
+    .leftbar .hide {
+        display: block;
+    }
+    .container {
+        left: 52.5%;
+        width: 75%;
+    }
 }
