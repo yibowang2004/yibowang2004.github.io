@@ -42,9 +42,6 @@ body {
 
 .leftbar .hide {
     display: none;
-}
-
-.leftbar .hide {
     float: right;
 }
 
@@ -142,7 +139,7 @@ body {
 
 @media only screen and (max-width: 1400px) {
     .leftbar {
-        width: 54px;
+        width: 40px;
     }
     .leftbar .content {
         display: none;
@@ -152,6 +149,6 @@ body {
     }
     .container {
         left: 52.5%;
-        width: 75%;
+        width: 67.5%;
     }
 }
