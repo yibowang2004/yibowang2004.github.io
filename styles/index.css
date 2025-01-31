@@ -139,16 +139,10 @@ body {
 
 @media only screen and (max-width: 1400px) {
     .leftbar {
-        width: 40px;
-    }
-    .leftbar .content {
         display: none;
     }
-    .leftbar .hide {
-        display: block;
-    }
     .container {
-        left: 52.5%;
-        width: 67.5%;
+        left: 50%;
+        width: 80%;
     }
 }
