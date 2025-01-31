@@ -95,6 +95,8 @@ body {
 
 .container {
     position: absolute;
+    left: 57.5%;
+    transform: translate(-50%);
     width: 60%;
     transition: all 0.5s;
 }
@@ -150,6 +152,6 @@ body {
     }
     .container {
         left: 52.5%;
-        width: 70%;
+        width: 75%;
     }
 }
