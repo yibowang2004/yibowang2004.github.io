@@ -95,7 +95,6 @@ body {
 
 .container {
     position: absolute;
-    left: 57.5%;
     width: 60%;
     transition: all 0.5s;
 }
