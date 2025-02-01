@@ -7,11 +7,11 @@ more.addEventListener('click', function () {
         container.style.left = container.style.left === '50%' ? '57.5%' : '50%';
         container.style.width = container.style.width === '80%' ? '60%' : '80%';
     }
-    if(window.innerWidth >= 600) {
+    if(window.innerWidth >= 480) {
         leftbar.style.width = '360px';
     }
-    if(window.innerWidth < 600) {
-        leftbar.style.width = '60%';
+    if(window.innerWidth < 480) {
+        leftbar.style.width = '80%';
     }
 });
 
@@ -27,11 +27,11 @@ window.onresize = function () {
         container.style.left = '50%';
         container.style.width = '80%';
     }
-    if(window.innerWidth >= 600) {
+    if(window.innerWidth >= 480) {
         leftbar.style.width = '360px';
     }
-    if(window.innerWidth < 600) {
-        leftbar.style.width = '60%';
+    if(window.innerWidth < 480) {
+        leftbar.style.width = '80%';
     }
 }
 
@@ -47,10 +47,10 @@ window.onload = function() {
         container.style.left = '50%';
         container.style.width = '80%';
     }
-    if(window.innerWidth >= 600) {
+    if(window.innerWidth >= 480) {
         leftbar.style.width = '360px';
     }
-    if(window.innerWidth < 600) {
-        leftbar.style.width = '60%';
+    if(window.innerWidth < 480) {
+        leftbar.style.width = '80%';
     }
 };
