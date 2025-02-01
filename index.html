@@ -7,12 +7,18 @@
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
+    <div class="header">
+        <p class="where">Home</p>
+        <img class="more" src="images/more.png" data-choose="0">
+        <p class="name">Yibo Wang</p>
+    </div>
+
     <div class="leftbar">
         <div class="content">
             <img class="icon" src="images/icon.jpg"/>
             <p class="name"><b>Yibo Wang</b></p>
-            <p class="intro">A junior student majoring in statistics in USTC</p>
-            <button class="home">
+            <p class="intro">A junior majoring in Statistics at USTC</p>
+            <button class="home" onclick="location.href=('index.html')">
                 <p>Home</p>
             </button>
             <button class="cv" onclick="window.open('documents/CV.pdf')">
@@ -20,28 +26,39 @@
             </button>
         </div>
     </div>
-    
+
     <div class="container">
-        <div class="wrapper">
-            <div class="box firstbox">
-                <div class="topbar">
-                    <p class="title">Welcome to Yibo Wang's Homepage!</p>
-                </div>
-            </div> 
-            <div class="box">
-                <div class="topbar">
-                    <p class="title">About</p>
-                </div>
-                <div class="content">
-                    <p>
-                        111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
-                    </p>
-                </div>
-                <div class="bottombar">
-                    <span class="time">2025/1/31</span>
-                </div>
-            </div> 
+        <div class="box firstbox">
+            <div class="topbar" style="margin-bottom: 0;">
+                <p class="title">Welcome to Yibo Wang's Homepage!</p>
+            </div>
+        </div> 
+        <div class="box">
+            <div class="topbar">
+                <p class="title">About me</p>
+            </div>
+            <div class="content">
+                <dl>
+                    <dt><b style="font-size: 18px;">Information:</b></dt>
+                    <br/>
+                    <dd>I am currently a junior majoring in Statistics at Department of Statistics and Finance, University of Science and Technology of China(USTC).
+                    My research interests includes <b>high-dimensional statistics</b> and <b>statistics of network analysis</b>.</dd>
+                    <br/>
+                    <dd>As for amateur interests, I am currently the president of USTC Harmonica Association. 
+                        I am also a big fan of photography. You can find more details on my Bilibili channel <a href="https://space.bilibili.com/357393111" target="_blank">-Yibooo-</a>.</dd>
+                    <br/>
+                    <dt><b style="font-size: 18px;">Contact:</b></dt>
+                    <br/>
+                    <dd>Email: yibooo@mail.ustc.edu.cn</dd>
+                    <dd>QQ: 3401558232</dd>
+                </dl>
+            </div>
+            <div class="bottombar">
+                <span class="time">Update: 2025/02/01</span>
+            </div>
         </div>
     </div>
+
+    <script src="scripts/moreClick.js"></script>
 </body>
 </html>
