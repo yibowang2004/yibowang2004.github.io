@@ -31,8 +31,8 @@ body {
 
 .leftbar {
     position: fixed;
+    bottom: 0;
     z-index: 9998;
-    margin-top: 36px;
     width: 360px;
     padding: 16px;
     height: 100%;
@@ -40,11 +40,11 @@ body {
     color: #363636;
     box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
     transition: all 0.5s;
-    overflow-y: hidden;
 }
 
 .leftbar .icon {
     margin: 16px 24px;
+    margin-top: 52px;
     height: 160px;
     box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
@@ -86,6 +86,7 @@ body {
 
 .header {
     position: fixed;
+    top: 0;
     z-index: 9999;
     width: 100%;
     height: 36px;
