@@ -22,8 +22,19 @@ p {
 }
 
 body {
-    overflow: hidden;
     background-color: white;
+}
+
+/* 隐藏滚动条的同时仍能滚动 */
+.scroll-container {
+    overflow: auto; /* 启用滚动功能 */
+    -ms-overflow-style: none; /* 适用于 Internet Explorer 和旧版 Edge */
+    scrollbar-width: none; /* 适用于 Firefox */
+}
+
+/* Webkit 浏览器 */
+.scroll-container::-webkit-scrollbar {
+    display: none; /* 隐藏滚动条 */
 }
 
 .wrapper {
