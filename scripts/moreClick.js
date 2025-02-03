@@ -6,7 +6,7 @@ more.addEventListener('click', function () {
     leftbar.style.display = leftbar.style.display === 'none' ? 'block' : 'none';
     if(window.innerWidth > threshold) {
         container.style.left = container.style.left === '50%' ? '57.5%' : '50%';
-        container.style.width = container.style.width === '80%' ? '60%' : '80%';
+        container.style.width = container.style.width === '90%' ? '60%' : '90%';
     }
     if(window.innerWidth >= 515) {
         leftbar.style.width = '360px';
@@ -28,7 +28,7 @@ window.onresize = function () {
         leftbar.style.display = 'none';
         leftbar.dataset.w = viewportWidth;
         container.style.left = '50%';
-        container.style.width = '80%';
+        container.style.width = '90%';
     }
     if(window.innerWidth >= 515) {
         leftbar.style.width = '360px';
@@ -50,7 +50,7 @@ window.onload = function() {
         leftbar.style.display = 'none';
         leftbar.dataset.w = viewportWidth;
         container.style.left = '50%';
-        container.style.width = '80%';
+        container.style.width = '90%';
     }
     if(window.innerWidth >= 515) {
         leftbar.style.width = '360px';

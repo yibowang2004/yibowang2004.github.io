@@ -29,6 +29,15 @@ p {
     word-wrap: break-word;
 }
 
+ul {
+    list-style-position: outside;
+}
+
+li {
+    margin-left: 24px;
+    padding-left: 8px;
+}
+
 body {
     background-color: white;
 }
@@ -69,18 +78,18 @@ body {
 .leftbar .icon {
     margin-bottom: 16px;
     margin-top: 56px;
-    height: 160px;
+    width: 60%;
     box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
 }
 
 .leftbar .name {
-    font-size: 32px;
+    font-size: 28px;
 }
 
 .leftbar .intro {
-    margin-top: 16px;
-    margin-bottom: 32px;
+    margin-top: 8px;
+    margin-bottom: 24px;
     font-size: 24px;
 }
 
@@ -118,9 +127,9 @@ body {
     position: absolute;
     left: 10%;
     transform: translate(-50%);
-    margin: 8px 0;
+    margin: 10px 0;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .header .name {
@@ -136,7 +145,7 @@ body {
     cursor: pointer;
     position: absolute;
     margin: 8px 0;
-    left: 19%;
+    left: 19.5%;
     height: 24px;
 }
 
@@ -160,13 +169,13 @@ body {
 }
 
 .container .box .topbar {
-    margin-bottom: 8px;
+    margin: 8px 0;
     height: auto;
     color: #1C1C1C;
 }
 
 .container .box .topbar .title {
-    font-size: 32px;
+    font-size: 28px;
     font-family: "Markazi_SemiBold", serif;
 }
 
