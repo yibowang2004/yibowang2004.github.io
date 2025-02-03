@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Markazi Text", serif;
+    font-family: "Markazi", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -22,7 +22,7 @@ a {
 }
 
 b {
-    font-weight: 550;
+    font-family: "Markazi_SemiBold", serif;
 }
 
 p {
@@ -49,6 +49,10 @@ body {
     margin: 0 auto;
 }
 
+.first {
+    margin-top: 0;
+}
+
 .leftbar {
     position: fixed;
     top: 0;
@@ -56,7 +60,7 @@ body {
     width: 360px;
     padding: 16px 40px;
     height: 100%;
-    background-color: #fcfeff;
+    background-color: white;
     color: #363636;
     box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
     transition: all 0.5s;
@@ -72,12 +76,11 @@ body {
 
 .leftbar .name {
     font-size: 32px;
-    font-weight: 550;
 }
 
 .leftbar .intro {
     margin-top: 16px;
-    margin-bottom: 36px;
+    margin-bottom: 32px;
     font-size: 24px;
 }
 
@@ -99,7 +102,6 @@ body {
 .leftbar button p {
     margin: 12px 0;
     font-size: 24px;
-    font-weight: 550;
 }
 
 .header {
@@ -119,7 +121,6 @@ body {
     margin: 8px 0;
     text-align: center;
     font-size: 24px;
-    font-weight: 550;
 }
 
 .header .name {
@@ -129,7 +130,6 @@ body {
     margin: 8px 0;
     text-align: center;
     font-size: 24px;
-    font-weight: 550;
 }
 
 .header .more {
@@ -150,7 +150,7 @@ body {
 }
 
 .container .box {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     padding: 24px 30px;
     width: 100%;
     height: auto;
@@ -160,14 +160,14 @@ body {
 }
 
 .container .box .topbar {
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     height: auto;
     color: #1C1C1C;
 }
 
 .container .box .topbar .title {
     font-size: 32px;
-    font-weight: 550;
+    font-family: "Markazi_SemiBold", serif;
 }
 
 .container .box .content {
@@ -175,8 +175,12 @@ body {
     color: #363636;
 }
 
+.container .box .content p {
+    margin-top: 8px;
+}
+
 .container .box .bottombar {
-    margin-top: 20px;
+    margin-top: 8px;
     color: #777;
     height: auto;
 }

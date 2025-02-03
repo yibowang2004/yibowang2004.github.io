@@ -1,4 +1,9 @@
 @font-face {
-	font-family: Markazi Text;
+	font-family: Markazi;
 	src: url(../fonts/Markazi_Text/MarkaziText-VariableFont_wght.ttf);
+}
+
+@font-face {
+	font-family: Markazi_SemiBold;
+	src: url(../fonts/Markazi_Text/static/MarkaziText-SemiBold.ttf);
 }
