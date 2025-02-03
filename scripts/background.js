@@ -1,6 +1,6 @@
 // 增加每次生成的方块数量
 const batchSize = 5; // 每次生成方块个数
-const interval = 500; // 生成间隔（毫秒）
+const interval = 1000; // 生成间隔（毫秒）
 
 function createSquare() {
     for(let i = 0; i < batchSize; i++) {
@@ -9,7 +9,7 @@ function createSquare() {
         
         const size = Math.floor(Math.random() * 3) + 1;
         const left = Math.random() * 99;
-        const duration = Math.random() * 3 + 10;
+        const duration = Math.random() * 3 + 20;
         const delay = Math.random() * -5;
 
         square.style.width = `${size}px`;
