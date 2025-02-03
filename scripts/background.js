@@ -1,8 +1,13 @@
-// 增加每次生成的方块数量
-const batchSize = 5; // 每次生成方块个数
+// 配置参数
+const batchSize = 5; // 每次生成5个方块
 const interval = 1000; // 生成间隔（毫秒）
+const maxSquares = window.innerWidth > 1400 ? 150 : 50;
+let currentSquares = 0; // 当前方块数量
 
 function createSquare() {
+    // 如果当前方块数量已达上限，则停止生成
+    if(currentSquares >= maxSquares) return;
+
     for(let i = 0; i < batchSize; i++) {
         const square = document.createElement('div');
         square.className = 'square';
@@ -18,9 +23,11 @@ function createSquare() {
         square.style.animation = `floatUp ${duration}s linear ${delay}s forwards`;
 
         document.querySelector('.background').appendChild(square);
+        currentSquares++;
 
         square.addEventListener('animationend', () => {
             square.remove();
+            currentSquares--;
         });
     }
 }
