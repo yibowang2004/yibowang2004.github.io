@@ -21,6 +21,10 @@ a {
     color: #337ab7;
 }
 
+b {
+    font-weight: 600;
+}
+
 p {
     word-wrap: break-word;
 }
@@ -68,7 +72,7 @@ body {
 
 .leftbar .name {
     font-size: 32px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .leftbar .intro {
@@ -95,7 +99,7 @@ body {
 .leftbar button p {
     margin: 12px 0;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .header {
@@ -115,7 +119,7 @@ body {
     margin: 8px 0;
     text-align: center;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .header .name {
@@ -125,7 +129,7 @@ body {
     margin: 8px 0;
     text-align: center;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .header .more {
@@ -163,7 +167,7 @@ body {
 
 .container .box .topbar .title {
     font-size: 32px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .container .box .content {
