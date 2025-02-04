@@ -33,11 +33,15 @@ function createSquare() {
         const left = Math.random() * 99;
         // 随机动画时长（3-6秒）
         const duration = Math.random() * 3 + 6;
+        const swing = (Math.random() - 0.5) * 40; // -20px到20px
 
-        square.style.width = `${size}px`;
-        square.style.height = `${size}px`;
-        square.style.left = `${left}%`;
-        square.style.animation = `floatUp ${duration}s linear forwards`;
+        square.style.cssText = `
+            width: ${size}px;
+            height: ${size}px;
+            left: ${left}%;
+            --swing: ${swing}px;
+            animation: floatUp ${duration}s linear forwards;
+        `;
 
         document.querySelector('.background').appendChild(square);
         currentSquares++;
