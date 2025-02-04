@@ -41,7 +41,6 @@ li {
 table {
     border-collapse: collapse;
     border: 1px solid black;
-    font-size: 20px;
     text-align: center;
 }
 
@@ -126,8 +125,20 @@ body {
 }
 
 .leftbar button p {
-    margin: 12px 0;
+    margin: 8px 0;
     font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .leftbar .name {
+        font-size: 24px;
+    }
+    .leftbar .intro {
+        font-size: 20px;
+    }
+    .leftbar button p {
+        font-size: 20px;
+    }
 }
 
 .header {
@@ -144,9 +155,9 @@ body {
     position: absolute;
     left: 10%;
     transform: translate(-50%);
-    margin: 10px 0;
+    margin: 8px 0;
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .header .name {
@@ -156,6 +167,17 @@ body {
     margin: 8px 0;
     text-align: center;
     font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .header .where {
+        margin: 10px 0;
+        font-size: 20px;
+    }
+    .header .name {
+        margin: 10px 0;
+        font-size: 20px;
+    }
 }
 
 .header .more {
@@ -199,6 +221,22 @@ body {
 .container .box .content {
     font-size: 24px;
     color: #363636;
+}
+
+.container .box .content table {
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .container .box .content {
+        font-size: 20px;
+    }
+    .container .box .topbar .title {
+        font-size: 24px;
+    }
+    .container .box .content table {
+        font-size: 16px;
+    }
 }
 
 .container .box .content p {
