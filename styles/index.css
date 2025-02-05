@@ -25,6 +25,10 @@ b {
     font-family: "Markazi_SemiBold", serif;
 }
 
+i {
+    font-style: italic;
+}
+
 p {
     word-wrap: break-word;
 }
