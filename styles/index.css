@@ -92,9 +92,15 @@ body {
     height: 100vh; /* 使用视口高度 */
     background-color: white;
     color: #363636;
-    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.075);
+    /* box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.075); */
     transition: all 0.5s;
     overflow-y: auto; /* 允许垂直滚动 */
+}
+
+@media (max-width: 1400px) {
+    .leftbar {
+        box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.075);
+    }
 }
 
 .leftbar .icon {
@@ -121,7 +127,7 @@ body {
     height: auto;
     background-color: white;
     color: #363636;
-    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
     border: none;
     border-radius: 6px;
 }
@@ -175,7 +181,31 @@ body {
     font-size: 24px;
 }
 
+.header .clickbar {
+    position: absolute;
+    right: 0;
+    margin: 8px 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+.header .clickbar button {
+    height: auto;
+    background-color: white;
+    border: none;
+    font-size: 24px;
+    display: inline; 
+    margin-right: 24px;
+}
+
+.header .clickbar button:hover {
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
+    .header .clickbar {
+        display: none;
+    }
     .header .where {
         margin: 10px 0;
         font-size: 20px;
@@ -190,16 +220,16 @@ body {
     cursor: pointer;
     position: absolute;
     margin: 8px 0;
-    left: 19.5%;
+    left: 12.5%;
     height: 24px;
 }
 
 .container {
     position: absolute;
     margin-top: 36px;
-    left: 62.5%;
+    left: 50%;
     transform: translate(-50%);
-    width: 65%;
+    width: 90%;
     transition: all 0.5s;
 }
 
@@ -209,8 +239,8 @@ body {
     width: 100%;
     height: auto;
     background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
-    border-radius: 6px;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+    /* border-radius: 6px; */
 }
 
 .container .box .topbar {
