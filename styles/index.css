@@ -196,6 +196,7 @@ body {
     font-size: 24px;
     display: inline; 
     margin-right: 24px;
+    color: #337ab7;
 }
 
 .header .clickbar button:hover {
