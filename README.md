@@ -1,2 +1,3 @@
-# yibowang2004.github.io
-Yibo Wang's Homepage
+# Yibo Wang’s Homepage
+
+Academic homepage with research, teaching, and contact information.
