@@ -6,7 +6,6 @@
   --text: #625d66;
   --accent: #82717d;
   --rule: #ded9e1;
-  --section-rule: #b9aebb;
   --serif: 'Playfair Display', Georgia, serif;
   --sans: 'DM Sans', Arial, sans-serif;
 }
@@ -62,7 +61,6 @@ a:hover { color: var(--heading); }
   align-items: center;
   gap: 1rem;
   padding-block: 1.2rem;
-  border-bottom: 1px solid var(--rule);
 }
 
 .site-title {
@@ -135,7 +133,6 @@ h2 { font-size: clamp(2rem, 3.6vw, 3.4rem); line-height: 1.12; letter-spacing: -
   column-gap: 2rem;
   align-items: baseline;
   padding-block: clamp(2rem, 4.2vw, 3.8rem);
-  border-top: 1px solid var(--rule);
 }
 .biography p, .section p { margin: 0; }
 .biography p + p { margin-top: 1em; }
@@ -178,16 +175,6 @@ h2 { font-size: clamp(2rem, 3.6vw, 3.4rem); line-height: 1.12; letter-spacing: -
 .research-section,
 .contact-section { background: var(--alternate-background); }
 .teaching-section { background: var(--background); }
-.research-section::before,
-.teaching-section::before,
-.contact-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: calc(10% + var(--page-gutter) * .8);
-  right: calc(10% + var(--page-gutter) * .8);
-  border-top: 2px solid var(--section-rule);
-}
 .research-section > h2,
 .teaching-section > h2,
 .contact-section > h2 { margin-bottom: 2rem; }
