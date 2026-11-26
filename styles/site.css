@@ -90,7 +90,11 @@ nav a:hover, nav [aria-current='page'] {
 .page {
   --page-gutter: max(calc((100% - 72rem) / 2), clamp(1.25rem, 5vw, 4.5rem));
 }
-.page > section { padding-inline: var(--page-gutter); }
+.page > section {
+  position: relative;
+  padding-inline: var(--page-gutter);
+  box-shadow: 0 -8px 24px -16px rgb(75 62 80 / 22%);
+}
 .page > h1 {
   margin: 0;
   padding-block: clamp(3.5rem, 8.5vw, 8.5rem);
@@ -231,6 +235,7 @@ h2 { font-size: clamp(2rem, 3.6vw, 3.4rem); line-height: 1.12; letter-spacing: -
   padding: clamp(1.25rem, 2.5vw, 2rem);
   border: 1px solid var(--rule);
   background: rgb(255 255 255 / 28%);
+  box-shadow: 0 6px 18px -12px rgb(75 62 80 / 18%);
 }
 .teaching-entry h3 {
   font-size: clamp(1.25rem, 1.8vw, 1.55rem);
